@@ -618,3 +618,10 @@
   .settings-section h3 { font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-4); }
   .settings-section:last-child { border-bottom: none; }
 }
+/* Mobile touch fixes */
+@media (max-width: 767px) {
+  .cart-backdrop { pointer-events: none; }
+  .cart-panel.open .cart-backdrop { pointer-events: auto; }
+  button, a, [role="button"], input, select, textarea { min-height: 44px; min-width: 44px; }
+  * { -webkit-tap-highlight-color: transparent; }
+}
